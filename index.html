@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unit Converter</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/aa94c4cf1b.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="dark-mode">
+        <div class="container">
+            <div class="head-container">
+                <label id="theme-switch" class="theme-switch" for="checkbox_theme">
+                    <input type="checkbox" id="checkbox-theme">
+                    <label for="checkbox-theme" class="fas"> </label>
+                </label>
+                <h1>Metric/Imperial Unit Conversion</h1>
+                    <div class="input_field">
+                        <input id="input-el" type="text" placeholder="0">
+                    </div>
+                    <button id="convert_btn" onclick="convert()">Convert</button>
+            </div>
+            <div class="footer-container">
+                <div class="section">
+                    <h2>Length (Meter/Feet)</h2>
+                    <p id="meterFeet-el"></p>
+                </div>
+                <div class="section">
+                    <h2>Volume (Liters/Gallons)</h2>
+                    <p id="litersGaloons-el"></p>
+                </div>
+                <div class="section">
+                    <h2>Mass (Kilograms/Pounds)</h2>
+                    <p id="kiloPounds-el"></p>
+                </div>
+            </div>
+
+        </div>
+        <script src="file.js"></script>
+    </body>
+</html>
